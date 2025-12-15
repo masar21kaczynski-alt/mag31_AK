@@ -9,12 +9,10 @@ st.set_page_config(page_title="Wesoły Magazyn", page_icon="🙂", layout="wide"
 with st.sidebar:
     st.header("Twój pomocnik magazynowy 👋")
     
-    # Używamy markdown # (nagłówków), żeby emojis były duże
-    st.markdown("# 👨‍🌾😁") # Uśmiechnięty chłop
-    st.markdown("### 👋🖐️6️⃣") # Ręka macha, ręka trzyma 6
-    st.markdown("### 🖐️7️⃣") # Druga ręka trzyma 7
+    # Wyświetlamy obrazek farmera
+    # Upewnij się, że plik 'image_1.png' jest w tym samym folderze co app.py
+    st.image("image_1.png", use_column_width=True, caption="„Mam szóstkę i siódemkę! I macham!”")
     
-    st.caption("„Patrz! Mam szóstkę i siódemkę! I macham!”")
     st.divider()
     st.write("Tutaj zarządzasz swoim magazynem z uśmiechem.")
 
